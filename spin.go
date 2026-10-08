@@ -1,11 +1,10 @@
 package main
 
 import (
-	"math/rand"
-	"time"
+	"math/rand/v2"
 )
 
-const SpinSize = 10
+const SpinSize = 500
 
 type Spin struct {
 	Cards    []Card
@@ -13,16 +12,14 @@ type Spin struct {
 }
 
 func NewSpin() *Spin {
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-
 	cards := make([]Card, SpinSize)
 	rndCards := GenerateRandomCardSequence()
 
 	for ind := 0; ind < SpinSize; ind++ {
-		cards[ind] = rndCards[r.Intn(len(rndCards)-1)]
+		cards[ind] = rndCards[rand.IntN(len(rndCards)-1)]
 	}
 
-	return &Spin{Cards: cards, Position: r.Intn(SpinSize)}
+	return &Spin{Cards: cards, Position: rand.IntN(SpinSize)}
 }
 
 func (s *Spin) Get(shift int) Card {
@@ -50,6 +47,5 @@ func (s *Spin) Get(shift int) Card {
 }
 
 func (s *Spin) Turn() {
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	s.Position = r.Intn(SpinSize)
+	s.Position = rand.IntN(SpinSize)
 }

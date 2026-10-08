@@ -1,8 +1,7 @@
 package main
 
 import (
-	"math/rand"
-	"time"
+	"math/rand/v2"
 )
 
 type Card int
@@ -20,23 +19,24 @@ const (
 	Wild
 )
 
-const CardsTotalWeight = 37
+const CardsCount = 10
+const CardsTotalWeight = 96
 const WildCardIndex = 9
 
 func (c Card) String() string {
-	names := [SpinSize]string{"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Aces", "Wild"}
+	names := [CardsCount]string{"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Aces", "Wild"}
 
 	return names[int(c)]
 }
 
 func (c Card) Price() int {
-	prices := [SpinSize]int{6, 7, 8, 9, 10, 15, 20, 25, 30, 1}
+	prices := [CardsCount]int{6, 7, 8, 9, 10, 15, 20, 25, 30, 1}
 
 	return prices[int(c)]
 }
 
 func (c Card) Weight() int {
-	weights := [SpinSize]int{4, 4, 4, 4, 4, 4, 4, 4, 4, 1}
+	weights := [CardsCount]int{10, 10, 10, 10, 10, 10, 10, 10, 10, 1}
 
 	return weights[int(c)]
 }
@@ -46,14 +46,13 @@ func (c Card) IsWild() bool {
 }
 
 func GenerateRandomCardSequence() []Card {
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	maxLen := CardsTotalWeight * 2
+	maxLen := CardsTotalWeight
 
 	cards := make([]Card, 0)
 	counter := make(map[Card]int, 0)
 
 	for i := 0; i < maxLen; i++ {
-		pos := r.Intn(SpinSize)
+		pos := rand.IntN(CardsCount)
 		c := Card(pos)
 
 		cnt, ok := counter[c]
