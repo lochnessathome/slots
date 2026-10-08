@@ -17,26 +17,32 @@ const (
 	Queen
 	King
 	Aces
+	Wild
 )
 
-const CardsTotalWeight = 36
+const CardsTotalWeight = 37
+const WildCardIndex = 9
 
 func (c Card) String() string {
-	names := [SpinSize]string{"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Aces"}
+	names := [SpinSize]string{"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Aces", "Wild"}
 
 	return names[int(c)]
 }
 
 func (c Card) Price() int {
-	prices := [SpinSize]int{6, 7, 8, 9, 10, 15, 20, 25, 30}
+	prices := [SpinSize]int{6, 7, 8, 9, 10, 15, 20, 25, 30, 1}
 
 	return prices[int(c)]
 }
 
 func (c Card) Weight() int {
-	weights := [SpinSize]int{4, 4, 4, 4, 4, 4, 4, 4, 4}
+	weights := [SpinSize]int{4, 4, 4, 4, 4, 4, 4, 4, 4, 1}
 
 	return weights[int(c)]
+}
+
+func (c Card) IsWild() bool {
+        return int(c) == WildCardIndex
 }
 
 func GenerateRandomCardSequence() []Card {
@@ -47,7 +53,7 @@ func GenerateRandomCardSequence() []Card {
 	counter := make(map[Card]int, 0)
 
 	for i := 0; i < maxLen; i++ {
-		pos := r.Intn(SpinSize - 1)
+		pos := r.Intn(SpinSize)
 		c := Card(pos)
 
 		cnt, ok := counter[c]

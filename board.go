@@ -66,16 +66,9 @@ func (b *Board) SeekHorizontalLine(shift int) *Combination {
 		return &Combination{Card: c[1], Number: 4}
 	}
 
-	if c[0] == c[1] && c[0] == c[2] {
-		return &Combination{Card: c[0], Number: 3}
-	}
-
-	if c[1] == c[2] && c[1] == c[3] {
-		return &Combination{Card: c[1], Number: 3}
-	}
-
-	if c[2] == c[3] && c[2] == c[4] {
-		return &Combination{Card: c[2], Number: 3}
+	ct := ExistsSequenceOfThree(c)
+	if ct != nil {
+		return ct
 	}
 
 	return nil

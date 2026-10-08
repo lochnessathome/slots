@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-const SpinSize = 9
+const SpinSize = 10
 
 type Spin struct {
 	Cards    []Card
