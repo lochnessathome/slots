@@ -18,8 +18,8 @@ func NewSpin() *Spin {
 	cards := make([]Card, SpinSize)
 	rndCards := GenerateRandomCardSequence()
 
-	for ind:=0;ind<SpinSize;ind++ {
-		cards[ind] = rndCards[r.Intn(len(rndCards) - 1)]
+	for ind := 0; ind < SpinSize; ind++ {
+		cards[ind] = rndCards[r.Intn(len(rndCards)-1)]
 	}
 
 	return &Spin{Cards: cards, Position: r.Intn(SpinSize)}
@@ -53,4 +53,3 @@ func (s *Spin) Turn() {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	s.Position = r.Intn(SpinSize)
 }
-

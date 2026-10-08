@@ -116,4 +116,3 @@ func (b *Board) SeekLeftDiagonalLine(startingShift int) *Combination {
 
 	return nil
 }
-

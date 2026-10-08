@@ -1,8 +1,8 @@
 package main
 
 import (
-        "math/rand"
-        "time"
+	"math/rand"
+	"time"
 )
 
 type Card int
@@ -34,34 +34,34 @@ func (c Card) Price() int {
 }
 
 func (c Card) Weight() int {
-        weights := [SpinSize]int{4, 4, 4, 4, 4, 4, 4, 4, 4}
+	weights := [SpinSize]int{4, 4, 4, 4, 4, 4, 4, 4, 4}
 
-        return weights[int(c)]
+	return weights[int(c)]
 }
 
 func GenerateRandomCardSequence() []Card {
-        r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	maxLen := CardsTotalWeight * 2
 
-        cards := make([]Card, 0)
-        counter := make(map[Card]int, 0)
+	cards := make([]Card, 0)
+	counter := make(map[Card]int, 0)
 
-        for i:=0;i<maxLen;i++ {
+	for i := 0; i < maxLen; i++ {
 		pos := r.Intn(SpinSize - 1)
 		c := Card(pos)
 
 		cnt, ok := counter[c]
 		if !ok {
 			counter[c] = 1
-			cards  = append(cards, c)
+			cards = append(cards, c)
 		} else {
 			if cnt == c.Weight() {
 				continue
 			}
 			counter[c]++
-        	        cards  = append(cards, c)
+			cards = append(cards, c)
 		}
-        }
+	}
 
 	return cards
 }
