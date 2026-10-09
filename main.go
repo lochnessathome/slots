@@ -32,6 +32,8 @@ func main() {
 			if combination != nil {
 				fmt.Println(board.Sprintf())
 				combination.Print()
+			        fmt.Println()
+
 				wins++
 			}
 		}
@@ -43,13 +45,25 @@ func main() {
 }
 
 func seek(board *Board) *Combination {
+	var combination *Combination
+
 	for r := -2; r <= 2; r++ {
-		combination := board.SeekHorizontalLine(r)
+		combination = board.SeekHorizontalLine(r)
 
 		if combination != nil {
 			return combination
 		}
 	}
+
+	combination = board.SeekLeftDiagonalLine(-2)
+                if combination != nil {
+                        return combination
+                }
+
+        combination = board.SeekRightDiagonalLine(-2)
+                if combination != nil {
+                        return combination
+                }
 
 	return nil
 }

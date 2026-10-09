@@ -1,0 +1,250 @@
+Jack	Jack	Six	Ten	Queen	
+Six	Nine	Seven	King	Nine	
+Aces	Six	Eight	Eight	Eight	
+Six	Seven	Ten	Wild	Eight	
+Seven	Seven	Six	Queen	Ten	
+
+card: Eight number: 3 price: 8 total: 24
+
+Seven	King	Six	Seven	Jack	
+Seven	Ten	Jack	Jack	Jack	
+Ten	Jack	King	Jack	Jack	
+Seven	Seven	Seven	Seven	Jack	
+Ten	King	Eight	Queen	Seven	
+
+card: Jack number: 3 price: 15 total: 45
+
+Ten	Nine	Seven	Seven	King	
+Ten	Seven	Seven	Seven	Seven	
+Nine	Queen	Eight	Aces	Aces	
+Six	Seven	Queen	Nine	Six	
+Eight	Ten	Ten	Ten	Jack	
+
+card: Seven number: 4 price: 7 total: 28
+
+King	Seven	Queen	Seven	Nine	
+King	Eight	Aces	Eight	Queen	
+Ten	Nine	Queen	Queen	Aces	
+Aces	Eight	Jack	Aces	Ten	
+Six	Aces	Jack	Jack	Jack	
+
+card: Jack number: 3 price: 15 total: 45
+
+Queen	Queen	Wild	Six	Aces	
+Six	Seven	Nine	Jack	Seven	
+Queen	Nine	Ten	Ten	Seven	
+Aces	Nine	Jack	Six	Six	
+Seven	Queen	Jack	Jack	Jack	
+
+card: Queen number: 3 price: 20 total: 60
+
+Ten	Nine	Eight	Jack	Queen	
+Queen	Jack	Eight	Eight	Queen	
+Six	Queen	Queen	Wild	Six	
+Ten	King	Ten	Aces	Seven	
+Queen	Queen	Nine	Eight	Queen	
+
+card: Queen number: 3 price: 20 total: 60
+
+Nine	Ten	Queen	Queen	Nine	
+Nine	Aces	Ten	Queen	Seven	
+King	Jack	Aces	Six	Seven	
+King	Seven	Aces	Aces	Jack	
+Ten	Nine	Ten	Seven	Seven	
+
+card: Aces number: 3 price: 30 total: 90
+
+King	Nine	Six	Eight	Seven	
+Eight	Six	Queen	Nine	Eight	
+Nine	Seven	Ten	Queen	Seven	
+Six	Seven	Aces	Ten	Seven	
+Aces	Seven	Aces	Seven	Ten	
+
+card: Ten number: 3 price: 10 total: 30
+
+Jack	Six	Six	Eight	Six	
+King	Queen	Aces	Queen	Eight	
+Nine	Nine	King	Six	Seven	
+King	Jack	Queen	Jack	Nine	
+Eight	Six	Six	Six	Seven	
+
+card: Six number: 3 price: 6 total: 18
+
+Seven	Seven	Ten	Queen	Queen	
+Ten	Queen	Queen	Nine	Queen	
+Queen	Six	Six	Ten	Eight	
+Six	Aces	Ten	Six	King	
+Six	Ten	Ten	Ten	Queen	
+
+card: Ten number: 3 price: 10 total: 30
+
+Aces	Ten	Nine	Seven	Jack	
+Six	Ten	Seven	Seven	Eight	
+Seven	Queen	Ten	Aces	Jack	
+Nine	Nine	Nine	Nine	Eight	
+Nine	Seven	Aces	Ten	Eight	
+
+card: Nine number: 4 price: 9 total: 36
+
+Aces	Six	Ten	Queen	Eight	
+Jack	Jack	Six	Queen	Jack	
+Nine	Nine	Wild	Six	Jack	
+Six	Queen	Nine	Aces	Six	
+Eight	Ten	Ten	Seven	Eight	
+
+card: Nine number: 3 price: 9 total: 27
+
+Queen	Nine	Jack	Queen	Eight	
+Queen	Queen	Queen	Seven	Eight	
+Queen	Aces	Queen	Six	Six	
+Queen	Jack	Aces	Aces	Queen	
+Six	Queen	Jack	Jack	Eight	
+
+card: Queen number: 3 price: 20 total: 60
+
+Eight	Jack	Aces	Ten	Seven	
+Nine	King	King	Jack	Jack	
+Eight	Seven	Six	Jack	Six	
+Ten	Ten	Ten	King	Aces	
+Ten	Ten	Aces	Jack	King	
+
+card: Ten number: 3 price: 10 total: 30
+
+Jack	Seven	Seven	Aces	Eight	
+Six	Eight	Nine	Aces	Queen	
+Queen	Jack	Six	Ten	Seven	
+Jack	Eight	Six	Wild	Nine	
+Ten	Seven	Ten	Seven	Six	
+
+card: Six number: 3 price: 6 total: 18
+
+Seven	Aces	Queen	Jack	Ten	
+Nine	Nine	Nine	Six	Eight	
+Nine	Jack	Seven	Seven	Queen	
+King	Queen	Ten	Jack	Aces	
+King	King	Queen	Nine	Seven	
+
+card: Nine number: 3 price: 9 total: 27
+
+Queen	Aces	Aces	Jack	Eight	
+Jack	King	Six	Six	Six	
+Aces	Jack	Nine	Jack	Aces	
+Seven	Six	Six	Jack	Seven	
+Aces	Aces	Eight	Eight	Nine	
+
+card: Six number: 3 price: 6 total: 18
+
+Seven	King	Wild	Jack	Queen	
+Eight	Six	Aces	Seven	Seven	
+Nine	Seven	Aces	Aces	Nine	
+Eight	Seven	Aces	Aces	Aces	
+Ten	King	Queen	Aces	Nine	
+
+card: Aces number: 3 price: 30 total: 90
+
+Ten	Ten	Ten	Jack	Wild	
+Queen	King	Six	King	Ten	
+Seven	Seven	Ten	Jack	Nine	
+King	Nine	Jack	Jack	Nine	
+Ten	King	Aces	Nine	Wild	
+
+card: Ten number: 3 price: 10 total: 30
+
+King	Aces	Aces	Queen	Jack	
+Queen	Seven	Seven	King	Aces	
+Six	Seven	Jack	Seven	Aces	
+Six	Ten	Eight	Jack	Aces	
+Six	Six	Eight	Queen	Wild	
+
+card: Jack number: 3 price: 15 total: 45
+
+Queen	Seven	Ten	King	Jack	
+King	Jack	Queen	Jack	Six	
+King	Nine	Nine	Jack	Six	
+Nine	Six	Seven	Nine	Eight	
+Seven	Seven	Queen	Ten	Wild	
+
+card: Nine number: 3 price: 9 total: 27
+
+Nine	Aces	Ten	Ten	Aces	
+Six	King	Jack	Eight	Eight	
+Eight	Jack	Six	Nine	Eight	
+Six	Six	Six	Jack	Aces	
+Eight	Aces	Nine	Seven	Six	
+
+card: Six number: 3 price: 6 total: 18
+
+Ten	Nine	Nine	Nine	Six	
+Nine	King	Aces	Jack	Queen	
+King	Ten	Wild	Seven	Wild	
+Seven	Aces	Ten	Seven	Jack	
+Aces	Jack	Six	Jack	King	
+
+card: Nine number: 3 price: 9 total: 27
+
+King	Eight	Aces	Jack	Jack	
+Eight	Eight	Eight	Queen	Queen	
+Nine	Jack	Aces	Eight	Six	
+Six	King	Aces	Ten	Nine	
+Aces	Queen	Nine	Aces	Ten	
+
+card: Eight number: 3 price: 8 total: 24
+
+Eight	Eight	Ten	Eight	Six	
+Eight	Jack	Ten	Ten	Queen	
+Six	Eight	Ten	Six	Wild	
+Six	Seven	Seven	Aces	Jack	
+Queen	Six	Wild	King	King	
+
+card: King number: 3 price: 25 total: 75
+
+Eight	Seven	Seven	Seven	Aces	
+Jack	Ten	Wild	Nine	Seven	
+Ten	Aces	Aces	Ten	Aces	
+Ten	King	Aces	Seven	Ten	
+Queen	Seven	Eight	Eight	Jack	
+
+card: Seven number: 3 price: 7 total: 21
+
+Wild	Seven	Ten	Ten	Ten	
+King	King	Nine	Six	Eight	
+Aces	Jack	King	Jack	Seven	
+Eight	Ten	Queen	Ten	Aces	
+Queen	Jack	Six	Six	Six	
+
+card: Ten number: 3 price: 10 total: 30
+
+King	Ten	Queen	King	Six	
+King	Jack	Ten	Aces	Six	
+Nine	Seven	Seven	Eight	Aces	
+Seven	King	Seven	Ten	Seven	
+Six	Ten	Seven	Seven	Wild	
+
+card: Seven number: 3 price: 7 total: 21
+
+Seven	Jack	Ten	Jack	Ten	
+Seven	Jack	Ten	Aces	King	
+Six	Nine	Nine	Nine	Nine	
+King	Nine	Six	Eight	Queen	
+Seven	Eight	King	Aces	Aces	
+
+card: Nine number: 4 price: 9 total: 36
+
+Ten	Six	Nine	Six	Eight	
+Ten	Aces	Six	Aces	Queen	
+Eight	King	Six	Eight	Jack	
+Seven	Queen	Ten	Eight	Queen	
+King	King	King	King	Eight	
+
+card: King number: 4 price: 25 total: 100
+
+Six	Aces	Eight	Seven	Ten	
+Queen	Ten	Nine	Ten	Seven	
+Six	Seven	Nine	Six	Six	
+Queen	Jack	Jack	Jack	Seven	
+Aces	Six	Eight	Ten	Jack	
+
+card: Jack number: 3 price: 15 total: 45
+
+31 of 1000 = 3.1 %
+

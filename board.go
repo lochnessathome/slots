@@ -54,22 +54,35 @@ func (b *Board) SeekHorizontalLine(shift int) *Combination {
 		c[s] = card
 	}
 
-	if c[0] == c[1] && c[0] == c[2] && c[0] == c[3] && c[0] == c[4] {
-		return &Combination{Card: c[0], Number: 5}
+	cm := MatchesFiveWild(c)
+	if cm != nil {
+		return cm
 	}
 
-	if c[0] == c[1] && c[0] == c[2] && c[0] == c[3] {
-		return &Combination{Card: c[0], Number: 4}
-	}
+        cm = MatchesFive(c)
+        if cm != nil {
+                return cm
+        }
 
-	if c[1] == c[2] && c[1] == c[3] && c[1] == c[4] {
-		return &Combination{Card: c[1], Number: 4}
-	}
+        cm = MatchesFourWild(c)
+        if cm != nil {
+                return cm
+        }
 
-	ct := ExistsSequenceOfThree(c)
-	if ct != nil {
-		return ct
-	}
+        cm = MatchesFour(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesThreeWild(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesThree(c)
+        if cm != nil {
+                return cm
+        }
 
 	return nil
 }
@@ -83,29 +96,78 @@ func (b *Board) SeekLeftDiagonalLine(startingShift int) *Combination {
 		c[s] = card
 	}
 
-	if c[0] == c[1] && c[0] == c[2] && c[0] == c[3] && c[0] == c[4] {
-		return &Combination{Card: c[0], Number: 5}
-	}
+        cm := MatchesFiveWild(c)
+        if cm != nil {
+                return cm
+        }
 
-	if c[0] == c[1] && c[0] == c[2] && c[0] == c[3] {
-		return &Combination{Card: c[0], Number: 4}
-	}
+        cm = MatchesFive(c)
+        if cm != nil {
+                return cm
+        }
 
-	if c[1] == c[2] && c[1] == c[3] && c[1] == c[4] {
-		return &Combination{Card: c[1], Number: 4}
-	}
+        cm = MatchesFourWild(c)
+        if cm != nil {
+                return cm
+        }
 
-	if c[0] == c[1] && c[0] == c[2] {
-		return &Combination{Card: c[0], Number: 3}
-	}
+        cm = MatchesFour(c)
+        if cm != nil {
+                return cm
+        }
 
-	if c[1] == c[2] && c[1] == c[3] {
-		return &Combination{Card: c[1], Number: 3}
-	}
+        cm = MatchesThreeWild(c)
+        if cm != nil {
+                return cm
+        }
 
-	if c[2] == c[3] && c[2] == c[4] {
-		return &Combination{Card: c[2], Number: 3}
-	}
+        cm = MatchesThree(c)
+        if cm != nil {
+                return cm
+        }
 
 	return nil
 }
+
+func (b *Board) SeekRightDiagonalLine(startingShift int) *Combination {
+	c := make([]Card, BoardSize)
+
+	for s := BoardSize; s > 0; s-- {
+		spin := b.Spins[s - 1]
+		card := spin.Get(startingShift + s - 1)
+		c[s - 1] = card
+	}
+
+        cm := MatchesFiveWild(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesFive(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesFourWild(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesFour(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesThreeWild(c)
+        if cm != nil {
+                return cm
+        }
+
+        cm = MatchesThree(c)
+        if cm != nil {
+                return cm
+        }
+
+	return nil
+}
+
